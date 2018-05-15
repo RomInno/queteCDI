@@ -34,11 +34,10 @@ public class TrackServlet extends HttpServlet {
         githuberSearchedLogin = request.getParameter("githuberSearchedLogin");
         memoryGithuberDAO.saveGithuber(githubUtils.parseGithuber(githuberSearchedLogin));
 
-        response.sendRedirect(request.getContextPath() + "/track");
+        response.sendRedirect(request.getContextPath() + "/githubers");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("List",githubersService.getGithuber(githuberSearchedLogin));
-        request.getRequestDispatcher("/githubers.jsp").forward(request, response);
+
     }
 }

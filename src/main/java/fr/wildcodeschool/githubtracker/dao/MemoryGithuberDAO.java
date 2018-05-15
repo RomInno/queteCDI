@@ -36,8 +36,7 @@ public class MemoryGithuberDAO implements GithuberDao{
 
     @PostConstruct
     private void callParseGithuber(){
-        String[] logins = {"christellsahli", "Gregbee", "sa mere en slip", "Lucilediague", "RomInno", "arnogc33", "jbourbo"};
-
+        String[] logins = {"christellsahli", "Gregbee", "sa mere lipopette", "Lucilediague", "RomInno", "arnogc33", "jbourbo"};
 
         for(String login : logins) {
             try {
