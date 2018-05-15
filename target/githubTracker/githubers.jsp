@@ -5,7 +5,7 @@
 
 <h1>page githubers</h1>
 
-<table class="table table-bordered">
+<table class="table table-striped">
     <c:forEach var="iList" items="${List}" >
         <tr>
             <td><c:out value="${iList.id}"/></td>
